@@ -1,0 +1,19 @@
+&CONTROL
+ wrf_dir = '/share/home/lililei4/haoxing/ANTHRO/src/wrfinput_template_18km'
+ anthro_dir =  '/share/home/lililei4/wrfchem_exps/EDGAR_2017/raw_data'
+
+ src_file_prefix = 'EDGARv6.1_'
+ src_file_suffix = '_2017_TOTALS.0.1x0.1.nc_withTime'
+ 
+ src_names = 'PM2.5(1)','CO(28)','NH3(17)','SO2(64)','OC(12)','BC(12)','PM10(1)'
+ cat_var_prefix = 'emi_'
+ sub_categories = 'pm2.5','pm10','co','nh3','so2','oc','bc'
+ emis_map = 'PM_25(a) -> PM2.5(pm2.5)',
+            'PM10(a) -> PM10(pm10)'
+            'CO -> CO(co)',
+            'NH3 -> NH3(nh3)',
+            'SO2 -> SO2(so2)',
+            'OC(a) -> OC(oc)',
+            'BC(a) -> BC(bc)',
+ serial_output     = .false.
+/
