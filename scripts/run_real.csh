@@ -35,7 +35,9 @@ cd $WORKDIR
 
 ln -sf ${WRF_DIR}/run/* .
 ln -sf ${WPS_OUTPUT_DIR}/met_em* . # link met_em files produced by WPS_OUTPUT_DIR
-if ($run_chem == true ) then ln -sf $EMISS_DIR/wrfchemi* . # link EMISSION file
+if ($run_chem == true ) then 
+    ln -sf $EMISS_DIR/wrfchemi* . # link EMISSION file
+endif
 # Haoxing : delete the sed namelist.input part for simplify. you maybe need to notice the namelist setting
 if ($run_chem == true ) then
     cp $NAMELIST_DIR/namelist_chem.input ./namelist.input #$%^ change this if needed
